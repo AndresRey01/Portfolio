@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
 
     <title>Andres Reyes Portfolio</title>
@@ -11,36 +12,67 @@
 
 <body>
     <!-- Header that contains nav bar  -->
-    <header>
+    <header class="heading">
         <p>Andres Reyes Portfolio</p>
     <nav>
         <ul>
             <li>
-                <a href="">About Me</a>
+                <a href="#aboutme">About Me</a>
             </li>
             <li>
                 <a href="">Contact</a>
             </li>
             <li>
-                <a href="">Work</a>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="https://github.com/AndresRey01" target="_blank">GitHub</a>
             </li>
         </ul>
     </nav>
     </header>
-    
+    <!-- Section containing avatar and about me -->
     <section class="main-wrapper">
         <aside>
-            <img src="./assets/images/Plant-leaves.jpg" alt="avatar">
+            <img class="avatar" src="./assets/images/Plant-leaves.jpg" alt="avatar">
             <p>
                 
             </p>
         </aside>
     <main>
-        <p class="aboutme">
-            Hey! My name is Andres, and this is my portfolio that will enventually contain all of my projects and information! I am based in Houston, Texas and love creating different kind of things!
+        <p id="aboutme">
+            Hi! My name is Andres, and this is my portfolio that will enventually contain all of my projects and information! I am based in Houston, Texas and love creating different kind of things!
 
         </p>
     </main>
     </section>
+
+    <!-- Section containing work -->
+    <section id="work">
+        <div class="title">Work</div>
+
+    <div id="main">
+        <div class="main-card">
+            <a href="https://andresrey01.github.io/week1-challenge/" target="_blank"><img src="./assets/images/challenge1.png" alt="Screenshot of the Refactor website"></a>
+            <p>Refactor Code Website!</p>
+        </div>
+        </div>
+        <div id="holder">
+        <div class="card">
+            <img src="./assets/images/clouds.jpg" alt="clouds">
+            <p>WIP</p>
+        </div>
+        <div class="card">
+            <img src="./assets/images/Mountain-view.jpg" alt="mountains">
+            <p>WIP</p>
+        </div>
+        <div class="card">
+            <img src="./assets/images/waves.jpg" alt="waves">
+            <p>WIP</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Section with contact form -->
 </body>
 </html>

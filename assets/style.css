@@ -12,14 +12,6 @@ body {
 }
 
 /* Header and nav bar */
-.heading {
-    background-color: lightblue ;
-}
-
-section {
-    background-color: lightblue;
-}
-
 header {
     display: flex;
     justify-content: center;
@@ -95,7 +87,7 @@ nav a::after {
 }
 
 main {
-    border: 1px solid black;
+    
     display: flex;
     justify-content: center;
     width: 60rem;
@@ -111,7 +103,7 @@ aside {
     width: 30rem;
 }
 
-/* Sections containig future and present work */
+/* Sections containing future and present work */
 
 #work {
     padding: 100px;
@@ -130,6 +122,13 @@ aside {
     text-align: center;
 }
 
+#holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}
+
 #main {
     display: flex;
     flex-wrap: wrap;
@@ -144,18 +143,52 @@ aside {
 
 .main-card {
     width: auto;
-    height: 600px;
+    height: 620px;
     padding: 10px;
-    background-color: blue;
+    background-color: lightcoral;
     margin: 20px;
 }
 
 .main-card p {
     font-family:monospace;
     text-transform: uppercase;
+    font-size: 45px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-card:hover {
+    transform: translateX(150px);
+    transition:transform .8s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.card {
+    width: 270px;
+    height: 300px;
+    padding: 10px;
+    background-color: lightcoral;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+
+}
+
+.card p {
+    font-family: monospace;
     font-size: 15px;
     margin: 5px;
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.card :hover {
+    transform: translateX(150px);
+    transition:transform .8s cubic-bezier(0.215, 0.610, 0.355, 1);
 }

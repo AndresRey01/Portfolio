@@ -193,7 +193,7 @@ aside {
     justify-content: center;
 }
 
-.card :hover {
+.card img:hover {
     transform: translateX(150px);
     transition:transform .8s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
